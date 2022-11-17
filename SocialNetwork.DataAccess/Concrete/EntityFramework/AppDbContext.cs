@@ -7,7 +7,7 @@ namespace SocialNetwork.DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-LES9OTM; Initial Catalog=SocialNetworkDb; Trusted_Connection=true; MultipleActiveResultSets=true")
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-LES9OTM; Initial Catalog=SocialNetworkDb; Trusted_Connection=true; MultipleActiveResultSets=true");
         }
 
         public DbSet<User> Users { get; set; }
